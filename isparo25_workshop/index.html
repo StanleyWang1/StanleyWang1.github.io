@@ -204,81 +204,38 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Hardware Demo. -->
+    <!-- Control Overview. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Autonomous Cable Routing Demo</h2>
-        <div class="publication-video">
-          <video id="cable-demo" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/cable_demo.mp4" type="video/mp4">
-          </video>
+        <h2 class="title is-3">Control Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            Measured normal force goes through a simple admittance control block (tuned for current robot compliance) to set an approach normal velocity into the task surface. Tangential velocity is commanded separately for surface trajectory following. This allows for gentle, steady contact while moving along surfaces.
+          </p>
         </div>
+        <img src="./static/figures/control_figure.png" alt="Control overview diagram" style="width: 80%; height: auto; display: block; margin: 0 auto;">
       </div>
     </div>
-    <!--/ Hardware Demo. -->
+    <!--/ Control Overview. -->
   </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Manipulator Hardware Design. -->
+    <!-- Initial Experiment. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Manipulator Hardware Design</h2>
+        <h2 class="title is-3">Initial Experiment</h2>
         <div class="content has-text-justified">
           <p>
-            A rollable fiberglass boom (from <a href="https://www.metoliusclimbing.com/roll-up-stick-clip-kit.html">Metolius Climbing</a>) is integrated in a custom long-reach manipulator design. key hardware components include a shoulder base, deployable boom arm (0.2 - 3m), and dexterous wrist. Mechanical characterizations of the boom are performed for uniaxial bending, free vibration effects, and deployment blossoming effects.
+            A long-reach deployable boom manipulator with compliant self-aligning wrist, 6-axis force sensor, and soft wiper pad maintaining normal contact with a vertical surface. Force and commanded normal velocity are plotted for three phases: (1) during approach (2) contact stabilization (3) trajectory following. We see that the admittance controller in the surface normal direction allows for stable tracking of desired forces in the range of ~2N.
           </p>
         </div>
-        <img src="./static/figures/hardware_design.png" alt="Manipulator hardware design" style="width: 100%; height: auto;">
-        <div class="content has-text-justified">
-          <p>
-            The overall manipulator is modeled using a 6 DoF rigid kinematic model (RRPRRR). However, an additional transformation is used to augment the links after the prismatic (boom) joint in order to compensate for elastic boom deflection.
-          </p>
-        </div>
-        <img src="./static/figures/robot_kinematics.png" alt="Robot kinematics" style="width: 50%; height: auto;">
+        <img src="./static/figures/experiment_figure.png" alt="Initial experiment results" style="width: 100%; height: auto; display: block; margin: 0 auto;">
       </div>
     </div>
-    <!--/ Manipulator Hardware Design. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Endpoint Visual Servo Control. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Endpoint Visual Servo Control</h2>
-        <div class="content has-text-justified">
-          <p>
-            We develop a model-based control framework for closed-loop endpoint position control. The robot follows task trajectories using visual end-effector localization (from endpoint camera) and a task-space kinematic model (augmented with Euler beam deflections).
-          </p>
-        </div>
-        <img src="./static/figures/control_stack.png" alt="Endpoint visual servo control" style="width: 100%; height: auto;">
-      </div>
-    </div>
-    <!--/ Endpoint Visual Servo Control. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Task Accuracy Experiments. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Task Accuracy Experiments</h2>
-        <div class="content has-text-justified">
-          <p>
-            We consider the tracking errors across the robot workspace for a 10 cm × 10 cm square reference trajectory. The robot's executed trajectories across trials are overlaid, and the maximum spatial error is visualized as a task tube. Errors increase with both boom pitch angle and extension, especially at higher speeds.
-          </p>
-        </div>
-        <img src="./static/figures/experiments.png" alt="Task accuracy experiments" style="width: 100%; height: auto;">
-      </div>
-    </div>
-    <!--/ Task Accuracy Experiments. -->
+    <!--/ Initial Experiment. -->
   </div>
 </section>
 
