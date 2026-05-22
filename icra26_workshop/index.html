@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="description"
         content="GIRAF - Greatly Increased Reach for Adaptive Fieldwork">
-  <meta name="keywords" content="robotics, lunar, manipulation, deployable boom">
+  <meta name="keywords" content="space robotics, field robotics, manipulation, deployable boom, in-space manufacturing and assembly">
   <meta property="og:title" content="GIRAF - Greatly Increased Reach for Adaptive Fieldwork">
-  <meta property="og:description" content="A compact and long-reach manipulator incorporating a deployable composite boom for lunar construction tasks.">
-  <meta property="og:image" content="https://stanleywang1.github.io/isparo25/static/figures/concept_art.png">
+  <meta property="og:description" content="A long-reach mobile manipulation platform integrating an ANYmal D quadruped with a deployable manipulator arm for large-workspace field and lunar tasks.">
+  <meta property="og:image" content="https://stanleywang1.github.io/icra26_workshop/static/figures/CONCEPT_FIG.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:url" content="https://stanleywang1.github.io/isparo25/">
+  <meta property="og:url" content="https://stanleywang1.github.io/icra26_workshop/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GIRAF - Greatly Increased Reach for Adaptive Fieldwork</title>
 
@@ -40,7 +40,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/stanford-favicon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -101,14 +101,18 @@
           <h1 class="title is-1 publication-title">GIRAF - Greatly Increased Reach for Adaptive Fieldwork</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/venny-kojouharov-a1a8141b4/">Venny Kojouharov</a><sup>*</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.linkedin.com/in/stanley11wang/">Stanley Wang</a><sup>*</sup>,</span>
+              <a href="https://www.linkedin.com/in/stanley11wang/">Stanley Wang</a>,</span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/long-yin-clive-chung-0653711ba/">Long Yin Chung</a>,
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/danielpmorton/">Daniel Morton</a>,
+              <a href="https://www.linkedin.com/in/venny-kojouharov-a1a8141b4/">Venny Kojouharov</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/lukas-klostermair-09ab61224">Lukas Klostermair</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/danielpmorton/">Dan Morton</a>,
             </span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/mark-cutkosky-11b63421/">Mark Cutkosky</a>
@@ -118,12 +122,18 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block">Dept. of Mechanical Engineering, Stanford University</span>
           </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">IEEE ICRA 2026 Workshop on Intelligent Space Robotics and Systems</span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Long-reach mobile manipulation for large-workspace field and lunar infrastructure tasks.</span>
+          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/1QQZZt8Zwu1xIth_pNYL4TDXFcyTnLcnR/view?usp=drive_link"
+                <a href="https://openreview.net/pdf?id=xWFFMqySMY"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -133,23 +143,33 @@
               </span>
               <!-- arXiv Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2603.29240"
-                   class="external-link button is-normal is-rounded is-dark">
+                <span class="external-link button is-normal is-rounded is-dark disabled-link"
+                      aria-disabled="true">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a>
+                </span>
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://drive.google.com/file/d/1_zaa6jREM3C_Ilo2vBPsisp4p53mbYxc/view?usp=drive_link"
+                <a href="#platform-video"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
+              </span>
+              <!-- Poster Link. -->
+              <span class="link-block">
+                <span class="external-link button is-normal is-rounded is-dark disabled-link"
+                      aria-disabled="true">
+                  <span class="icon">
+                      <i class="fas fa-image"></i>
+                  </span>
+                  <span>Poster</span>
+                </span>
               </span>
               <!-- Code Link. -->
               <span class="link-block">
@@ -176,7 +196,7 @@
     <div class="hero-body">
       <img src="./static/figures/CONCEPT_FIG.jpg" alt="Concept illustration of GIRAF robotic manipulator" style="width: 80%; height: auto; display: block; margin: 0 auto;">
       <p style="margin-top: 1rem; font-size: 0.95rem; color: #666; text-align: center;">
-        Concept illustration of a mobile base (wheeled rover) equipped with a long-reach (5-10m) deployable manipulator arm for cleaning large solar arrays.
+        GIRAF pairs rough-terrain quadrupedal mobility with a deployable long-reach manipulator to access task locations distributed across large field and lunar workspaces.
       </p>
     </div>
   </div>
@@ -191,7 +211,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Sustained lunar surface operations require regular maintenance of critical infrastructure, particularly the cleaning and inspection of large solar arrays that degrade due to dust accumulation. We present a small mobile robot equipped with a long-reach, lightweight deployable boom and interchangeable cleaning tool designed to perform meter-scale maintenance tasks across varied array configurations. Building on prior work demonstrating accurate vision-guided manipulation with deployable composite booms, we integrate a compliant wrist with distal force sensing and velocity-based admittance control to enable stable, repeatable contact for gentle cleaning operations. The control strategy regulates force interaction while performing simple vertical-motion cleaning primitives. Preliminary benchtop results demonstrate stable force regulation below 2N normal force, indicating the feasibility of this approach for lunar surface maintenance applications.
+            GIRAF combines an ANYmal D quadruped with a 6-DoF deployable manipulator, enabling multi-meter task access while jointly planning base placement and arm reach.
+            Construction, inspection, and maintenance tasks in field and space environments often span workspaces larger than the robot itself. Tasks such as cable routing, large-surface cleaning, sensor installation, and fixturing benefit from extended reach, but still require mobility over partially structured terrain. GIRAF targets this middle ground by pairing a mobile base for coarse repositioning with a deployable arm for local access across distributed task points.
           </p>
         </div>
       </div>
@@ -203,38 +224,161 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Control Overview. -->
+    <!-- Motivation. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Control Overview</h2>
+        <h2 class="title is-3">Motivation</h2>
         <div class="content has-text-justified">
           <p>
-            Measured normal force goes through a simple admittance control block (tuned for current robot compliance) to set an approach normal velocity into the task surface. Tangential velocity is commanded separately for surface trajectory following. This allows for gentle, steady contact while moving along surfaces.
+            Sustained space and lunar surface infrastructure will require robots to build, inspect, and maintain structures that span many meters, including cable harnesses, solar arrays, habitats, and sensor networks. These tasks often occur in partially built or rough environments where repeatedly repositioning a robot is slow, risky, or energy intensive. GIRAF uses legged mobility for terrain access and a lightweight deployable boom to reduce the amount of base motion needed for distributed space infrastructure tasks.
           </p>
         </div>
-        <img src="./static/figures/control_figure.png" alt="Control overview diagram" style="width: 80%; height: auto; display: block; margin: 0 auto;">
       </div>
     </div>
-    <!--/ Control Overview. -->
+    <!--/ Motivation. -->
   </div>
 </section>
 
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Initial Experiment. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- Platform Walkthrough Video Placeholder. -->
+    <div id="platform-video" class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Initial Experiment</h2>
-        <div class="content has-text-justified">
-          <p>
-            A long-reach deployable boom manipulator with compliant self-aligning wrist, 6-axis force sensor, and soft wiper pad maintaining normal contact with a vertical surface. Force and commanded normal velocity are plotted for three phases: (1) during approach (2) contact stabilization (3) trajectory following. We see that the admittance controller in the surface normal direction allows for stable tracking of desired forces in the range of ~2N.
-          </p>
+        <h2 class="title is-3">Platform Walkthrough</h2>
+        <div class="video-placeholder-box" style="background-image: url('./static/figures/OVERVIEW_FIG.jpg');">
+          <div class="video-placeholder-overlay">
+            <span class="icon is-large">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <span>Video coming soon</span>
+            <code>static/videos/giraf_platform_overview.mp4</code>
+          </div>
         </div>
-        <img src="./static/figures/experiment_figure.png" alt="Initial experiment results" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p style="margin-top: 1rem; font-size: 0.95rem; color: #666; text-align: center;">
+          Future slot for a short overview video introducing the ANYmal-mounted deployable arm, the hardware modules, and the reachable workspace.
+        </p>
       </div>
     </div>
-    <!--/ Initial Experiment. -->
+    <!--/ Platform Walkthrough Video Placeholder. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- System Overview. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">System Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            GIRAF mounts a 6-DoF deployable manipulator on an ANYmal D quadruped. The base provides rough-terrain mobility and coarse repositioning, while two high-torque arm joints orient a 3 m rollable fiberglass boom. A spool drive, support rollers, and direct deployed-length encoder feedback support controlled extension, and a compact wrist with an endpoint camera and parallel-jaw gripper handles local manipulation. The onboard control stack runs in Dockerized ROS 1 Noetic.
+          </p>
+        </div>
+        <img src="./static/figures/OVERVIEW_FIG.jpg" alt="GIRAF system overview" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+        <p style="margin-top: 1rem; font-size: 0.95rem; color: #666; text-align: center;">
+          GIRAF integrates a legged mobile base, deployable boom, dexterous wrist, and task-level planning for long-reach field manipulation.
+        </p>
+      </div>
+    </div>
+    <!--/ System Overview. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Coordinated Planning. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Coordinated Planning</h2>
+        <div class="content has-text-justified">
+          <p>
+            GIRAF plans over the coupled base-arm system, balancing coarse base motion with precise long-reach manipulation. Task reachability is represented as a feasible region for the mobile base: once the base enters that region, the deployable arm can reach the task point under a specified reach limit.
+          </p>
+          <p>
+            Obstacles constrain the base trajectory, while the long arm can still provide task access from outside the immediate work area. The initial formulation minimizes base travel through task regions and solves the nonconvex obstacle constraint with CVXPY and DCCP.
+          </p>
+        </div>
+        <img src="./static/figures/TRAJ_FIGURE_COMB.jpg" alt="GIRAF coordinated planning trajectories" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+        <img src="./static/figures/TRAJ_TABLE.png" alt="GIRAF trajectory planning comparison table" style="width: 100%; height: auto; display: block; margin: 1.5rem auto 0;">
+        <div class="content has-text-justified" style="margin-top: 1.5rem;">
+          <p>
+            In initial hardware experiments, increasing the reach limit from 0.5 m to 2.0 m reduced base travel from 6.5 m to 3.3 m without an obstacle, and from 7.5 m to 4.2 m with an obstacle. Execution time did not drop proportionally: long-reach trials took 67 sec and 73 sec because boom motion was conservatively rate-limited for stability.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Coordinated Planning. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Hardware Deployment Video Placeholder. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Hardware Deployment</h2>
+        <div class="video-placeholder-box" style="background-image: url('./static/figures/TRAJ_FIGURE_COMB.jpg');">
+          <div class="video-placeholder-overlay">
+            <span class="icon is-large">
+              <i class="fab fa-youtube"></i>
+            </span>
+            <span>Video coming soon</span>
+            <code>static/videos/giraf_hardware_deployment.mp4</code>
+          </div>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.95rem; color: #666; text-align: center;">
+          Future slot for deployment footage showing the planned base trajectory and deployable arm reaching task locations on hardware.
+        </p>
+      </div>
+    </div>
+    <!--/ Hardware Deployment Video Placeholder. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Discussion. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Discussion and Future Work</h2>
+        <div class="content has-text-justified">
+          <p>
+            These results are an initial hardware and planning framework for long-reach mobile manipulation. Future work will incorporate vision-informed grasping, assembly and fine manipulation, full-body kinematics, dynamic effects of long deployments, and richer obstacle- or risk-aware planning methods such as graphs of convex sets or sampling-based planners.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Discussion. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Citation. -->
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Citation</h2>
+        <pre><code>@inproceedings{wang2026giraf,
+  title={GIRAF - Greatly Increased Reach for Adaptive Fieldwork},
+  author={Stanley Wang and Long Yin Chung and Venny Kojouharov and Lukas Klostermair and Dan Morton and Mark Cutkosky},
+  booktitle={Workshop on Intelligent Space Robotics and Systems},
+  year={2026},
+  url={https://openreview.net/forum?id=xWFFMqySMY}
+}</code></pre>
+        <div class="content has-text-justified">
+          <p>
+            We gratefully acknowledge support from the Stanford Robotics Center, NASA NSTGRO, the NSF Graduate Research Fellowship, and Knight-Hennessy Scholars.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Citation. -->
   </div>
 </section>
 
@@ -243,7 +387,7 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="https://stanleywang1.github.io/isparo25/">
+         href="https://openreview.net/pdf?id=xWFFMqySMY">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/StanleyWang1" class="external-link">
