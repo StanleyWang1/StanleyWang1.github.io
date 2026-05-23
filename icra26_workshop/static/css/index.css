@@ -216,3 +216,18 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* Venue link styling: lighter gray, underline on hover/focus */
+.publication-venue-link {
+  color: #8b8b8b;
+  text-decoration: none;
+  transition: color 0.12s ease;
+}
+.publication-venue-link:hover,
+.publication-venue-link:focus {
+  color: #555555;
+  text-decoration: underline;
+}
+.publication-venue-link:focus {
+  outline: none;
+}
