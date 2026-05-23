@@ -13,6 +13,17 @@ body {
     margin-bottom: 5px;
 }
 
+/* Ensure all publication link buttons are vertically aligned and icons centered */
+.publication-links .link-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+.publication-links .link-block a,
+.publication-links .link-block .disabled-link {
+  display: inline-flex;
+  align-items: center;
+}
+
 .link-block .disabled-link {
     margin-top: 5px;
     margin-bottom: 5px;
